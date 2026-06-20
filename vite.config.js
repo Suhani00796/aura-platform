@@ -7,14 +7,13 @@ import react from '@vitejs/plugin-react';
  */
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/aura-platform/', // Change './' to '/aura-platform/'
   server: {
-    port: 3000, // Sets a predictable local port for presentation deployment
-    host: true, // Allows exposing the server to the local network (great for testing on a phone)
+    port: 3000,
+    host: true,
   },
   resolve: {
     alias: {
-      // Allows clean relative import path configurations if required later
       '@': '/src',
     },
   },
